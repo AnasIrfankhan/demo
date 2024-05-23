@@ -186,14 +186,14 @@ def changed_password(request):
         
         return Response({'Message':'Invalid Password '})
  
-@api_view(['POST'])
-def forgot_password(request):
-    # old_Password = request.data.get('old_password')
-    new_Password=request.data.get('new_password')
-    email=request.data.get('email')
-    otp=request.data.get('otp')
+# @api_view(['POST'])
+# def forgot_password(request):
+#     # old_Password = request.data.get('old_password')
+#     new_Password=request.data.get('new_password')
+#     email=request.data.get('email')
+#     otp=request.data.get('otp')
     
-    serialized_data = forgot_password_serializers(data=request.data)
+    # serialized_data = forgot_password_serializers(data=request.data)
         # user=User.objects.get(email=email)
 
     # if serialized_data.is_valid():
