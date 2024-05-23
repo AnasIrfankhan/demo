@@ -208,7 +208,7 @@ from django.core.mail import send_mail
             
 @api_view(['POST'])
 
-def reset_password(request):
+def Send_Otp(request):
     serializer=Reset_PasswordSerializer(data= request.data)
      
     if serializer.is_valid():
@@ -239,6 +239,8 @@ def reset_password(request):
 
         
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
 
 
 

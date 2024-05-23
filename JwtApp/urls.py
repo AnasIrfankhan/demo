@@ -18,7 +18,7 @@ urlpatterns = [
     path('Manager/',views.Manager_view),
     path('user/',views.UserModelViewSet.as_view({'get': 'list'})),
     path('Password/',views.changed_password),
-    path('send_otp/',views.reset_password),
+    path('send_otp/',views.Send_Otp),
     path('reset_Password/',views.forgot_Password),
 
 
