@@ -47,11 +47,7 @@ def userviews(request):
     serializer = User_Serializers(user, many=False)
     return Response(serializer.data)
 
-# """{
-# "email":"",
-# "password":"",
-# "role":1
-# }"""
+
 
 from django.contrib.auth import authenticate
 
