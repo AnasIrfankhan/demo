@@ -24,7 +24,6 @@ from django.core.mail import EmailMessage
 from .serializers import User_Serializers,Student_serializers ,Reset_PasswordSerializer,Forgot_Password_Serializer
 
 
-# Create your views here.
 
 class StudentModelViewSet(viewsets.ModelViewSet):
     queryset=Student.objects.all()
