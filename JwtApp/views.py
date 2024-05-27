@@ -20,7 +20,6 @@ from django.core.mail import EmailMessage
 
 
 
-
 from .serializers import User_Serializers,Student_serializers ,Reset_PasswordSerializer,Forgot_Password_Serializer
 
 
@@ -181,7 +180,6 @@ def changed_password(request):
         
         return Response({'Message':'Invalid Password '})
  
-# @api_view(['POST'])
 # def forgot_password(request):
 #     # old_Password = request.data.get('old_password')
 #     new_Password=request.data.get('new_password')
